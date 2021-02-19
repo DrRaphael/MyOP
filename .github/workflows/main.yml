@@ -37,6 +37,6 @@ jobs:
           git clone https://github.com/DrRaphael/MyOP.git
           echo Start Build**************************************************************************************************************************************************
           cd MyOP
-          sudo make -j8 download V=s
-          cd dl
-          ls
+          make defconfig
+          make -j8 download V=s
+          make -j1 V=s
