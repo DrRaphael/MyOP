@@ -39,5 +39,5 @@ jobs:
           sudo chmod -R 777 MyOP
           cd MyOP
           make defconfig
-          make -j8 download V=s
+          make -j1 download V=s
           make -j1 V=s
